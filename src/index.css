@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.apiContainer{
+  width: 100vw;
+}
+
+.apiContainer h2{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.postContainer{
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid blue;
+  
+}
+
+.postMenu{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  width: fit-content;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.postTitle{
+  border-bottom: 1px solid blue;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+.postBody{
+  font-size: 1rem;
+}
+
+.badge{
+  color: #0d6efd;
+  background: #ffc107;
+}

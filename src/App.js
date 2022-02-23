@@ -1,4 +1,4 @@
-import React, {Component, component} from 'react';
+import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Todos from './components/Todos';
 import './index.css';
@@ -9,6 +9,8 @@ import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
 import axios from 'axios';
+import LearnApi from './components/pages/LearnApi';
+import Student from './components/pages/Student';
 
 class App extends Component{
   state = {
@@ -71,6 +73,9 @@ class App extends Component{
               </React.Fragment>
             )} />
             <Route path="/about" component={About}/>
+            <Route path="/api" exact component={LearnApi}/>
+            <Route path="/student-resource" exact component={Student}/>
+
           </div>
         </div>
       </Router>
