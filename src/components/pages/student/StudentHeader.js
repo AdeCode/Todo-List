@@ -5,6 +5,8 @@ import StudentList from "./StudentList";
 import CreateStudent from "./CreateStudent";
 import Student from "../Student";
 import Studentdata from "./Studentdata";
+import CreateUser from "../user/CreateUser";
+import UserLogin from "../user/UserLogin";
 
 const StudentHeader = () => {
     return (
@@ -24,6 +26,16 @@ const StudentHeader = () => {
                     Add
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link to={"/register"} className="nav-link">
+                    Register User
+                    </Link>
+                </li>
+                <li className="nav-item">
+                    <Link to={"/login"} className="nav-link">
+                    Login
+                    </Link>
+                </li>
                 {/* <li className="nav-item">
                     <Link to={"/student-data"} className="nav-link">
                     Data
@@ -39,6 +51,9 @@ const StudentHeader = () => {
                     <Route exact path="/add" component={CreateStudent} />
                     {/* <Route path="/student/:id" component={Student} /> */}
                     <Route exact path={"/student/:id"} component={Studentdata} />
+                    <Route exact path={["/register"]} component={CreateUser} />
+                    <Route exact path={["/login"]} component={UserLogin} />
+
                 </Switch>
             </div>
         </div>

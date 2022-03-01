@@ -9,7 +9,7 @@ const get = id => {
 };
 
 const create = data => {
-    return http.post('/add-student', data)
+    return http.post('/addStudent', data)
 };
 
 const update = (id, data) => {
@@ -25,8 +25,17 @@ const removeAll = () => {
 };
 
 const findByName = name => {
-    return http.get(`/students?name=${name}`)
+    //return http.get(`/students?name=${name}`)
+    return http.get(`/search/${name}`)
 };
+
+const createUser = (data) => {
+    return http.post('/create-user', data)
+}
+
+const userLogin = (data) => {
+    return http.post('/user-login', data)
+}
 
 export default {
     getAll,
@@ -35,5 +44,7 @@ export default {
     update,
     remove,
     removeAll,
-    findByName
+    findByName,
+    createUser,
+    userLogin
 };

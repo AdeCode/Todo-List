@@ -28,9 +28,7 @@ export default function Studentdata(props) {
 
     useEffect(() => {
         getStudent(props.match.params.id);
-        // return () => {
-        //     cleanup
-        // }
+       
     }, [props.match.params.id]);
 
     const handleInputChange = event => {
@@ -43,7 +41,7 @@ export default function Studentdata(props) {
         StudentService.update(currentStudent.id, currentStudent)
         .then(response => {
             console.log(response.data);
-            setMessage("The Student was updated successfully");
+            setMessage("Student data updated successfully");
         })
         .catch(e => {
             console.log(e);

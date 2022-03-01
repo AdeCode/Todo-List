@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Todos from './components/Todos';
 import './index.css';
-import '../../newapp/src/App.css';
 import {v4 as uuidv4} from 'uuid';
 
 import Header from './components/layout/Header';
