@@ -18,6 +18,7 @@ export default function CreateStudent() {
         setStudent({ ...student, [name]: value });
     };
 
+    //create new student
     const saveStudent = (e) => {
         e.preventDefault();
         var data = {
